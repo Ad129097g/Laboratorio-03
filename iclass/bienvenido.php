@@ -1,6 +1,6 @@
 <?php
     $usuario = $_POST['usuario'];
-    $password = $_POST['password'];
+    $email = $_POST['email'];
 
     /*echo $usuario .', '. $password*/
 ?>
@@ -18,24 +18,15 @@
 <body>
     <div class="container">
         <div class="row">
-            <?php
-                if($usuario == 'adriana' && $password == '1234'){
-                    echo "<h1>Bienvenido</h1>";
-                    echo "<p>Usuario: ".$usuario ." </p>";
-                    echo "<div class='btn-group' role='group' aria-label='Basic mixed styles example'>";
-                    echo "<a href= 'calculadora.html' class= 'btn btn-primary'> Ir a calculadora</a>";
-                    echo "<a href= 'ejercicio2.html' class= 'btn btn-success'> Ir a ejercicio 2</a>";
-                    echo "<a href= 'ejercicio3.html' class= 'btn btn-warning'> Ir a ejercicio 3</a>";
-                    echo "<a href= 'ejercicio4.html' class= 'btn btn-danger'> Ir a ejercicio 4</a>";
-                    echo "</div>";
-                }  
-                 else{
-                ?>
-                    <h1>Usuario no valido</h1>
-                    <a href='index.php' class='btn btn-danger'> Regresar al login </a>
-                <?php 
-                }
-                ?>  
+
+            <h1>Bienvenido</h1>
+                <?php    echo "<p>Usuario: ".$usuario ."<br>  Correo: " . $email ."</p>";?>
+                <div class='btn-group' role='group' aria-label='Basic mixed styles example'>
+                    <a href= 'calculadora.html' class= 'btn btn-primary'> Ir a calculadora</a>
+                    <a href= 'ejercicio2.html' class= 'btn btn-success'> Ir a ejercicio 2</a>
+                    <a href= 'ejercicio3.html' class= 'btn btn-warning'> Ir a ejercicio 3</a>
+                    <a href= 'ejercicio4.html' class= 'btn btn-danger'> Ir a ejercicio 4</a>
+                </div>
         </div>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
