@@ -37,21 +37,15 @@
                     <form id="formLogin" method="post" action="bienvenido.php">
                         <div class="form-group">
                             <label>Usuario:</label>
-                            <input id="usuario" name="usuario" type="text" class="form control" placeholder="Ingrese su usuario"> 
+                            <input id="usuario" name="usuario" type="text" class="form control" placeholder="Ingrese su usuario" required> 
                         </div>
                         <div class="form-group mt-3">
-                            <label>Password:</label>
-                            <input id="password" name="password" type="password" class="form control" placeholder="Ingrese su contraseña"> 
+                            <label>Email   :</label>
+                            <input id="email" name="email" type="email" class="form control" placeholder="Ingrese su email" required> 
 
                         </div>
                         <div class="form-group mt-3">
                             <button type="submit" class="btn btn-secondary col-12">Ingresar</button>
-                        </div>
-                        <div class="mt-3">
-                            <p class="text-center">
-                                <a href="javascript:informar();">¿Olvido su contraseña?</a>
-                            </p>
-                            <p></p>
                         </div>
                     </form>
                 </div>
